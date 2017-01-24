@@ -18,6 +18,9 @@ import model.User;
  */
 public class BibliotecaJDBC {
     
+    private final static String user = "admin";
+    private final static String pass = "admin";
+    
       private Connection conexion;
       //connect bbdd
       public void connect() throws SQLException {
@@ -56,12 +59,13 @@ public class BibliotecaJDBC {
         disconnect();
         return ok;
     }
-    public boolean verificarAdmin(String usr, String pass) throws SQLException{
-        connect();
-        
-        if(usr == ){
-            
-        }
-        
-    }
+//    public boolean verificarAdmin() throws S QLException{
+//        connect();
+//          conexion = DriverManager.getConnection(user, pass);
+//            st = ct.createStatement();
+//            JOptionPane.showMessageDialog(0, "");
+//            
+//       
+//        
+//    }
 }
