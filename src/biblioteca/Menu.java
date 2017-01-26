@@ -5,6 +5,7 @@
  */
 package biblioteca;
 
+import java.awt.Color;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -23,6 +24,7 @@ public class Menu extends javax.swing.JFrame {
     public Menu() {
         initComponents();
         this.setLocationRelativeTo(null);
+         this.getContentPane().setBackground(Color.orange);
     }
 
     /**

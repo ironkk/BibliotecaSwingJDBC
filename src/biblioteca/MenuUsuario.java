@@ -1,5 +1,7 @@
 package biblioteca;
 
+import java.awt.Color;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -17,6 +19,7 @@ public class MenuUsuario extends javax.swing.JFrame {
      */
     public MenuUsuario() {
         initComponents();
+         this.getContentPane().setBackground(Color.orange);
     }
 
     /**
@@ -134,7 +137,6 @@ public class MenuUsuario extends javax.swing.JFrame {
        AltaLibros altaLibro = new AltaLibros(this, true);
        altaLibro.setLocationRelativeTo(null);
        altaLibro.setVisible(true);
-       dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -145,7 +147,6 @@ public class MenuUsuario extends javax.swing.JFrame {
        ModificarLibros modificarLibros = new ModificarLibros(this,true);
        modificarLibros.setLocationRelativeTo(null);
        modificarLibros.setVisible(true);
-       dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

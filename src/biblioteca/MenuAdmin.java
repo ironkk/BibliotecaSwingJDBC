@@ -5,6 +5,8 @@
  */
 package biblioteca;
 
+import java.awt.Color;
+
 /**
  *
  * @author dam
@@ -16,6 +18,7 @@ public class MenuAdmin extends javax.swing.JFrame {
      */
     public MenuAdmin() {
         initComponents();
+         this.getContentPane().setBackground(Color.orange);
     }
 
     /**

@@ -5,6 +5,9 @@
  */
 package biblioteca;
 
+import java.awt.Color;
+import javax.swing.JPanel;
+
 /**
  *
  * @author dam
@@ -17,6 +20,7 @@ public class AltaLibros extends javax.swing.JDialog {
     public AltaLibros(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+         this.getContentPane().setBackground(Color.orange);
     }
 
     /**
@@ -57,6 +61,11 @@ public class AltaLibros extends javax.swing.JDialog {
         jLabel6.setText("GÉNERO");
 
         jButton1.setText("ALTA");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("<< ATRÁS");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -68,10 +77,20 @@ public class AltaLibros extends javax.swing.JDialog {
         jTextField1.setText("jTextField1");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
 
         jTextField2.setText("jTextField2");
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -143,8 +162,26 @@ public class AltaLibros extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+       // DIRGIR A PANTALLA ANTERIOR
+    dispose();
+      
+
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       // ALTA
+       
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // CONSULTA DE TODOS LOS AUTORES
+        
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+       // CONSULTA DE TODOS LOS GENEROS
+       
+    }//GEN-LAST:event_jComboBox2ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -5,6 +5,8 @@
  */
 package biblioteca;
 
+import java.awt.Color;
+
 /**
  *
  * @author dam
@@ -16,6 +18,7 @@ public class EliminarLibro extends javax.swing.JFrame {
      */
     public EliminarLibro() {
         initComponents();
+         this.getContentPane().setBackground(Color.orange);
     }
 
     /**
@@ -44,6 +47,11 @@ public class EliminarLibro extends javax.swing.JFrame {
         jButton1.setText("ELIMINAR");
 
         jButton2.setText("ATRÁS");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -83,6 +91,10 @@ public class EliminarLibro extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+      dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
